@@ -1,10 +1,12 @@
 ---
-date: 2025-03-07
-draft: true
-title: 'Auction'
+title: "A close look into 1st price / 2nd price auctions"
+date: 2023-07-10
+description: "We introduce some basic mechanism design concepts and analyse 1st/2nd price auctions in the symmetric case."
+tags: ["mechanism design"]
+categories: ["technical"]
+searchHidden: false  
+draft: false
 ---
-
-# A close look into 1st price / 2nd price auctions
 
 ## The setup
 
