@@ -18,7 +18,7 @@
       <link>http://localhost:1313/posts/auction/</link>
       <pubDate>Mon, 10 Jul 2023 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/posts/auction/</guid>
-      <description>A concise description of your post content</description>
+      <description>We introduce some basic mechanism design concepts and analyse 1st/2nd price auctions in the symmetric case.</description>
     </item>
   </channel>
 </rss>
