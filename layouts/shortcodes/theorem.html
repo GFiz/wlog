@@ -1,0 +1,6 @@
+<div class="theorem {{ .Get 0 }}" style="display: block; margin: 20px 0; padding: 15px; border-left: 5px solid {{ if eq (.Get 0) "theorem" }}#2980b9{{ else if eq (.Get 0) "lemma" }}#27ae60{{ else if eq (.Get 0) "corollary" }}#8e44ad{{ else if eq (.Get 0) "definition" }}#f39c12{{ else if eq (.Get 0) "proposition" }}#d35400{{ else }}#e74c3c{{ end }};">
+    <strong>{{ humanize (.Get 0) }}{{ with .Get 1 }} {{ . }}{{ end }}:</strong>
+    <div class="theorem-content">
+      {{ .Inner | markdownify }}
+    </div>
+  </div>

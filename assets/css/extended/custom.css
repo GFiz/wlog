@@ -1,0 +1,40 @@
+.theorem {
+    background-color: #f8f9fa;
+    border-radius: 4px;
+    padding: 1.5rem;
+    margin: 1.5rem 0;
+  }
+  
+  .theorem strong {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+    color: #2c3e50;
+  }
+  
+  .theorem.theorem {
+    border-color: #2980b9;
+  }
+  
+  .theorem.lemma {
+    border-color: #27ae60;
+  }
+  
+  .theorem.corollary {
+    border-color: #8e44ad;
+  }
+  
+  .theorem.definition {
+    border-color: #f39c12;
+  }
+  
+  .theorem-content {
+    font-style: normal;
+    line-height: 1.6;
+  }
+  .theorem.proposition {
+    border-color: #d35400;
+  }
+  .theorem-content p {
+    margin: 0.5rem 0;
+  }

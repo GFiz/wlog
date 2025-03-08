@@ -22,6 +22,7 @@ params:
   DateFormat: "January 2, 2006"
   defaultTheme: auto # dark, light
   disableThemeToggle: false
+  math: true
 
   ShowReadingTime: true
   ShowShareButtons: true
@@ -105,7 +106,7 @@ params:
     threshold: 0.4
     minMatchCharLength: 0
     limit: 10 # refer: https://www.fusejs.io/api/methods.html#search
-    keys: ["title", "permalink", "summary", "content"]
+    keys: ["title", "permalink", "summary", "content", "tags", "categories"]
 
   archives:
     enable: true
@@ -117,17 +118,29 @@ params:
   # Enable search
   search:
     enable: true
+    # Set to true to match the whole phrase (instead of individual words)
+    matchWholeWords: false
+    # Set to true to include the title in search results
+    includeTitle: true
+    # Set to true to include the content in search results
+    includeContent: true
+    # Set to true to include the name of the file in search results
+    includeNamesInDetails: true
 
 menu:
   main:
     - identifier: archive
       name: Archives
       url: /archives/
-      weight: 20
+      weight: 10
     - identifier: about
       name: About
       url: /about/
-      weight: 10
+      weight: 30
+    - identifier: search
+      name: Search
+      url: /search/
+      weight: 20
   
     
   
@@ -141,3 +154,9 @@ markup:
     # guessSyntax: true
     # lineNos: true
     # style: monokai
+
+outputs:
+  home:
+    - HTML
+    - RSS
+    - JSON  # This is crucial for search functionality
