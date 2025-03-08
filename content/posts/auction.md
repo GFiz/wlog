@@ -6,6 +6,7 @@ tags: ["mechanism design"]
 categories: ["technical"]
 searchHidden: false  
 draft: false
+math: true
 ---
 
 ## The setup
