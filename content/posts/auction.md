@@ -1,7 +1,7 @@
 ---
-date = '2025-03-08T12:24:58+01:00'
-draft = true
-title = 'Auction'
+date: 2025-03-07
+draft: true
+title: 'Auction'
 ---
 
 # A close look into 1st price / 2nd price auctions
