@@ -8,7 +8,10 @@
         inlineMath: [['$', '$'], ['\\(', '\\)']],
         displayMath: [['$$', '$$'], ['\\[', '\\]']],
         processEscapes: true,
-        packages: {'[+]': ['ams']}
+        packages: {'[+]': ['ams','amsthm']},
+        macros: {
+          qed: '\\text{QED}.'
+        }
       },
       loader: {load: ['[tex]/ams']},
       svg: {

@@ -1,40 +1,49 @@
-.theorem {
-    background-color: #f8f9fa;
+:root {
+  --thm-color: #2980b9;
+  --lemma-color: #27ae60;
+  --corollary-color: #8e44ad;
+  --definition-color: #f39c12;
+  --proposition-color: #d35400;
+  --default-color: #e74c3c;
+}
+
+.dark {
+  --thm-color: #3498db;
+  --lemma-color: #2ecc71;
+  --corollary-color: #9b59b6;
+  --definition-color: #f1c40f;
+  --proposition-color: #e67e22;
+  --default-color: #e74c3c;
+}
+
+.thm {
+    background-color: var(--code-bg);
     border-radius: 4px;
     padding: 1.5rem;
     margin: 1.5rem 0;
-  }
-  
-  .theorem strong {
+    border-left: 5px solid var(--default-color);
+    border-right: 5px solid var(--default-color);
+}
+
+.thm strong {
     display: block;
     font-weight: bold;
     margin-bottom: 0.5rem;
-    color: #2c3e50;
-  }
-  
-  .theorem.theorem {
-    border-color: #2980b9;
-  }
-  
-  .theorem.lemma {
-    border-color: #27ae60;
-  }
-  
-  .theorem.corollary {
-    border-color: #8e44ad;
-  }
-  
-  .theorem.definition {
-    border-color: #f39c12;
-  }
-  
-  .theorem-content {
+    color: var(--primary);
+}
+
+.thm.thm { border-color: var(--thm-color); }
+.thm.lemma { border-color: var(--lemma-color); }
+.thm.corollary { border-color: var(--corollary-color); }
+.thm.definition { border-color: var(--definition-color); }
+.thm.proposition { border-color: var(--proposition-color); }
+.thm { border-color: var(--default-color); }
+
+.thm-content {
     font-style: normal;
     line-height: 1.6;
-  }
-  .theorem.proposition {
-    border-color: #d35400;
-  }
-  .theorem-content p {
+}
+
+.thm-content p {
     margin: 0.5rem 0;
-  }
+}

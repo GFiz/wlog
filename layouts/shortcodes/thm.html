@@ -1,0 +1,6 @@
+<div class="thm {{ .Get 0 }}">
+    <strong>{{ humanize (.Get 0) }}{{ with .Get 1 }} {{ . }}{{ end }}:</strong>
+    <div class="thm-content">
+      {{ .Inner | markdownify }}
+    </div>
+</div>
