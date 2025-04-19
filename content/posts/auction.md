@@ -61,7 +61,7 @@ $$
 
 Given the equilibrium strategies $\beta_{-i}^{\ast}$ of all other bidders, bidder $i$ cannot increase their expected utility by deviating from $\beta_i^{\ast}$. We say that a bidder is *rational* if they follow such an optimal strategy.
 
-<!-- {{< thm proposition "[Rationality and monotonicity of allocation imply monotonicity of $\beta$]" >}} -->
+
 *Suppose that a bidder is rational. Then, their bidding strategy is monotone.*
 **Proof.** Assume for contradiction that the bidder 1's  strategy is not monotone. Then, there exists some $v, v' \in \mathbb{R}$ such that $v < v'$ and $\beta(v)=b > \beta(v') = b'$ and consider the following utility values:
 $$
@@ -85,7 +85,6 @@ $$
 $$
 Recall that $v < v'$ and $b > b'$. In particular, $\mathbb{P}(\text{Win} | b) \geq \mathbb{P}(\text{Win} | b')$. This implies that $\Delta_1 + \Delta_2 < 0$ and therefore swapping the values $b$ and $b'$ would increase the bidder's utility. This contradicts the assumption that the bidder is rational and thus the bidder's strategy must be monotone $\qed$
 >Note that in the proof we are using the fact that the probability of winning is a monotone function of the bid. This property of the allocation rule a.k.a the social choice function is known as *the weakly monotone property*.
-<!-- {{< /thm >}} -->
 
 
 A particularly important case in auction theory is the symmetric scenario, where all bidders have valuations drawn from the same distribution $F(v)$, and consequently use the same strategy function $\beta(v)$ to map their valuation $v$ to a bid $b$. This symmetry simplifies the analysis while still bringing to light some key prroperties. For this post, we will assume that bidder valuations are independent and identically distributed (i.i.d.), meaning that each bidder's valuation is drawn independently from the same distribution. Therefore the joint distribution of valuations is $\mathbf{F}(v_1, v_2, \dots, v_n) = \prod_{i=1}^n F(v_i)$.
@@ -94,7 +93,7 @@ A particularly important case in auction theory is the symmetric scenario, where
 
 Let's know try to derive the optimal strategies in the symmetric setting for both 1st and 2nd price auctions.
 
-<!-- {{< thm proposition "[Truthfulness in second price auctions]">}} -->
+
 *In a second price auction, bidding truthfully, i.e. $\beta(v)=v$,  is a weakly dominant strategy.*
 **Proof.**
 Assume that for bidder $i$, there exist some $v\in \mathbb{R}^+$ such that $v<b=\beta(b)$. Let $Y = \max_{j\neq i}\mathbf{b}$ and observe that the utility for placing a bid $b$ at value $v$ is given by:
@@ -112,9 +111,8 @@ $$
 $$
 A similar argument shows that the above also holds with $b<v$.
 >Note That that the only property we have used here is the fact that we have private values and so the bidding strategy may only depend on a bidders own valuation. In particular, the proposotion does not require the valuation distributions to be i.i.d.
-<!-- {{< /thm >}} -->
 
-<!-- {{< thm proposition "[Optimal strategy in first price]">}} -->
+
 *In a first price auction with i.i.d valuations drawn from a distrubution $F$,  the following strategy is a symmetric equilibrium*:
 $$
 \begin{align}\
@@ -162,5 +160,3 @@ U(v,\beta(v)) - U(v,b) &= \int_0^v G(y)dy - G(z)(v-z) - \int_0^z G(y)dy \\\\
 $$
 because $G$ is also monotone increasing.
 
-
-<!-- {{< /thm >}} -->
