@@ -16,7 +16,7 @@ ShowBreadCrumbs: false
 ShowPostNavLinks: false
 ShowWordCount: false
 cover:
-  image: "static/profile.jpg"
+  image: "profile.jpg"
   alt: "Profile Photo"
   relative: false
   hidden: false
