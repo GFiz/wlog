@@ -93,7 +93,7 @@ A particularly important case in auction theory is the symmetric scenario, where
 
 Let's know try to derive the optimal strategies in the symmetric setting for both 1st and 2nd price auctions.
 
-
+{{< theorem proposition >}}
 *In a second price auction, bidding truthfully, i.e. $\beta(v)=v$,  is a weakly dominant strategy.*
 **Proof.**
 Assume that for bidder $i$, there exist some $v\in \mathbb{R}^+$ such that $v<b=\beta(b)$. Let $Y = \max_{j\neq i}\mathbf{b}$ and observe that the utility for placing a bid $b$ at value $v$ is given by:
@@ -111,8 +111,9 @@ $$
 $$
 A similar argument shows that the above also holds with $b<v$.
 >Note That that the only property we have used here is the fact that we have private values and so the bidding strategy may only depend on a bidders own valuation. In particular, the proposotion does not require the valuation distributions to be i.i.d.
+{{< /theorem >}}
 
-
+{{< theorem proposition >}}
 *In a first price auction with i.i.d valuations drawn from a distrubution $F$,  the following strategy is a symmetric equilibrium*:
 $$
 \begin{align}\
@@ -159,4 +160,4 @@ U(v,\beta(v)) - U(v,b) &= \int_0^v G(y)dy - G(z)(v-z) - \int_0^z G(y)dy \\\\
 \end{align}
 $$
 because $G$ is also monotone increasing.
-
+{{< /theorem >}}
