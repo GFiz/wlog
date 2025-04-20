@@ -23,7 +23,9 @@ params:
   defaultTheme: auto # dark, light
   disableThemeToggle: false
   math: true
-
+  label:
+    icon: /HomeImage.png  # Path to the logo image
+    iconHeight: 35               
   ShowReadingTime: true
   ShowShareButtons: true
   ShowPostNavLinks: true
