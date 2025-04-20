@@ -83,7 +83,7 @@ Observe that
 $$
 \Delta_1 + \Delta_2 = \left( \mathbb{P}(\text{Win} | b) - \mathbb{P}(\text{Win} | b') \right) \cdot (v_1 - v_2)
 $$
-Recall that $v < v'$ and $b > b'$. In particular, $\mathbb{P}(\text{Win} | b) \geq \mathbb{P}(\text{Win} | b')$. This implies that $\Delta_1 + \Delta_2 < 0$ and therefore swapping the values $b$ and $b'$ would increase the bidder's utility. This contradicts the assumption that the bidder is rational and thus the bidder's strategy must be monotone $\qed$
+Recall that $v < v'$ and $b > b'$. In particular, $\mathbb{P}(\text{Win} | b) \geq \mathbb{P}(\text{Win} | b')$. This implies that $\Delta_1 + \Delta_2 < 0$ and therefore swapping the values $b$ and $b'$ would increase the bidder's utility. This contradicts the assumption that the bidder is rational and thus the bidder's strategy must be monotone.
 >Note that in the proof we are using the fact that the probability of winning is a monotone function of the bid. This property of the allocation rule a.k.a the social choice function is known as *the weakly monotone property*.
 {{< /theorem >}}
 
