@@ -61,7 +61,7 @@ $$
 
 Given the equilibrium strategies $\beta_{-i}^{\ast}$ of all other bidders, bidder $i$ cannot increase their expected utility by deviating from $\beta_i^{\ast}$. We say that a bidder is *rational* if they follow such an optimal strategy.
 
-
+{{< theorem proposition >}}
 *Suppose that a bidder is rational. Then, their bidding strategy is monotone.*
 **Proof.** Assume for contradiction that the bidder 1's  strategy is not monotone. Then, there exists some $v, v' \in \mathbb{R}$ such that $v < v'$ and $\beta(v)=b > \beta(v') = b'$ and consider the following utility values:
 $$
@@ -85,7 +85,7 @@ $$
 $$
 Recall that $v < v'$ and $b > b'$. In particular, $\mathbb{P}(\text{Win} | b) \geq \mathbb{P}(\text{Win} | b')$. This implies that $\Delta_1 + \Delta_2 < 0$ and therefore swapping the values $b$ and $b'$ would increase the bidder's utility. This contradicts the assumption that the bidder is rational and thus the bidder's strategy must be monotone $\qed$
 >Note that in the proof we are using the fact that the probability of winning is a monotone function of the bid. This property of the allocation rule a.k.a the social choice function is known as *the weakly monotone property*.
-
+{{< /theorem >}}
 
 A particularly important case in auction theory is the symmetric scenario, where all bidders have valuations drawn from the same distribution $F(v)$, and consequently use the same strategy function $\beta(v)$ to map their valuation $v$ to a bid $b$. This symmetry simplifies the analysis while still bringing to light some key prroperties. For this post, we will assume that bidder valuations are independent and identically distributed (i.i.d.), meaning that each bidder's valuation is drawn independently from the same distribution. Therefore the joint distribution of valuations is $\mathbf{F}(v_1, v_2, \dots, v_n) = \prod_{i=1}^n F(v_i)$.
 
