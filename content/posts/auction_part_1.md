@@ -1,6 +1,6 @@
 ---
-title: "A fists look into first and second price auctions (Part)"
-date: 2023-07-10
+title: "A look into the mathematics of first and second price auctions (Part I)"
+date: 2025-04-20
 description: "We introduce some basic mechanism design concepts and analyse 1st/2nd price auctions in the symmetric case."
 tags: ["mechanism design"]
 categories: ["technical"]
